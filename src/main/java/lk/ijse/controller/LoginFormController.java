@@ -31,7 +31,7 @@ public class LoginFormController {
     @FXML
     void loginBtnOnAction(ActionEvent event) throws IOException, SQLException {
         if(radioAdmin.isSelected()){
-            URL resource = this.getClass().getResource("/view/login_form.fxml");
+            URL resource = this.getClass().getResource("/view/select_form.fxml");
             FXMLLoader fxmlLoader = new FXMLLoader(resource);
             Parent load = fxmlLoader.load();
             LoginFormController controller = fxmlLoader.getController();
@@ -45,7 +45,7 @@ public class LoginFormController {
             stage.show();
         }
         else {
-            URL resource = this.getClass().getResource("/view/login_form.fxml");
+            URL resource = this.getClass().getResource("/view/select_form.fxml");
             FXMLLoader fxmlLoader = new FXMLLoader(resource);
             Parent load = fxmlLoader.load();
             LoginFormController controller = fxmlLoader.getController();
@@ -59,6 +59,7 @@ public class LoginFormController {
             stage.show();
         }
     }
+
     @FXML
     void radioAdminOnAction(ActionEvent event) {
         if(radioAdmin.isSelected()){
