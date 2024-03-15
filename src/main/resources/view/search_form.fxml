@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SearchFormController">
+   <children>
+      <Label fx:id="lblName" layoutX="23.0" layoutY="29.0" prefHeight="57.0" prefWidth="345.0">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="125.0" prefHeight="32.0" prefWidth="105.0" text="Book ID:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="241.0" prefHeight="32.0" prefWidth="105.0" text="Author:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="302.0" prefHeight="32.0" prefWidth="105.0" text="Genre:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="183.0" prefHeight="32.0" prefWidth="105.0" text="Book Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBookName" layoutX="128.0" layoutY="183.0" prefHeight="32.0" prefWidth="270.0">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBookId" layoutX="110.0" layoutY="125.0" prefHeight="32.0" prefWidth="270.0">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAuthor" layoutX="98.0" layoutY="241.0" prefHeight="32.0" prefWidth="270.0">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGenre" layoutX="92.0" layoutY="302.0" prefHeight="32.0" prefWidth="270.0">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="30.0" layoutY="440.0" onAction="#btnBorrowOnAction" prefHeight="40.0" prefWidth="111.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 8px;" text="Borrow Book" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="200.0" fitWidth="201.0" layoutX="474.0" layoutY="286.0">
+         <image>
+            <Image url="@../assets/the-bookworm-is-my-spirit-animal-iii-tina-lavoie.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="30.0" layoutY="370.0" prefHeight="32.0" prefWidth="105.0" text="Status:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus" layoutX="92.0" layoutY="370.0" prefHeight="32.0" prefWidth="270.0">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

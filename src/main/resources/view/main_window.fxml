@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.MainWindowController">
+   <children>
+      <ImageView fitHeight="707.0" fitWidth="1009.0" layoutX="-3.0" layoutY="-1.0">
+         <image>
+            <Image url="@../assets/Telegram.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="root" layoutX="68.0" layoutY="61.0" prefHeight="572.0" prefWidth="855.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="172.0" fitWidth="186.0" layoutX="344.0" layoutY="22.0">
+               <image>
+                  <Image url="@../assets/vecteezy_bookworm-vector_266909.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="42.0" layoutX="268.0" layoutY="195.0">
+               <image>
+                  <Image url="@../assets/icons8-book-48.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="310.0" layoutY="206.0" prefHeight="16.0" prefWidth="342.0" text="Welcome back to your Online Library">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="161.0" layoutY="345.0" onAction="#adminOnAction" prefHeight="86.0" prefWidth="200.0" style="-fx-background-color: #e74c3c;" text=" Admin" textFill="WHITE">
+               <font>
+                  <Font name="Ubuntu Mono Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="495.0" layoutY="345.0" onAction="#userOnAction" prefHeight="86.0" prefWidth="200.0" style="-fx-background-color: #e74c3c;" text="  User" textFill="WHITE">
+               <font>
+                  <Font name="Ubuntu Mono Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </JFXButton>
+            <ImageView fitHeight="40.0" fitWidth="42.0" layoutX="541.0" layoutY="368.0">
+               <image>
+                  <Image url="@../assets/icons8-user-48.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="184.0" layoutY="363.0">
+               <image>
+                  <Image url="@../assets/icons8-admin-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,4 +1,4 @@
-package lk.ijse.controller;
+package lk.ijse.libraryManagementSystem.controller;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
@@ -10,12 +10,12 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import lk.ijse.bo.AdminBo;
-import lk.ijse.bo.UserBo;
-import lk.ijse.bo.impl.AdminBoImpl;
-import lk.ijse.bo.impl.UserBoImpl;
-import lk.ijse.dto.AdminDto;
-import lk.ijse.dto.UserDto;
+import lk.ijse.libraryManagementSystem.bo.AdminBo;
+import lk.ijse.libraryManagementSystem.bo.UserBo;
+import lk.ijse.libraryManagementSystem.bo.impl.AdminBoImpl;
+import lk.ijse.libraryManagementSystem.bo.impl.UserBoImpl;
+import lk.ijse.libraryManagementSystem.dto.AdminDto;
+import lk.ijse.libraryManagementSystem.dto.UserDto;
 
 import java.io.IOException;
 import java.sql.SQLException;

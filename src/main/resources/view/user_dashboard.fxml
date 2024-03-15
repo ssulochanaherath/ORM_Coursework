@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #f5f6fa;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.MainUserController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="12.0" prefHeight="677.0" prefWidth="223.0" style="-fx-background-color: #353b48; -fx-background-radius: 15px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="102.0" fitWidth="103.0" layoutX="53.0" layoutY="14.0">
+               <image>
+                  <Image url="@../assets/vecteezy_bookworm-vector_266909-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="225.0" onAction="#btnBooksOnAction" prefHeight="48.0" prefWidth="156.0" text="Books" textFill="WHITE">
+               <font>
+                  <Font name="Ubuntu Mono Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </JFXButton>
+            <ImageView layoutX="38.0" layoutY="234.0">
+               <image>
+                  <Image url="@../assets/icons8-books-30.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="600.0" onAction="#btnSignOutOnAction" prefHeight="48.0" prefWidth="156.0" text="Sign Out" textFill="WHITE">
+               <font>
+                  <Font name="Ubuntu Mono Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </JFXButton>
+            <ImageView layoutX="49.0" layoutY="612.0">
+               <image>
+                  <Image url="@../assets/icons8-logout-24.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="146.0" onAction="#btnDashboardOnAction" prefHeight="48.0" prefWidth="156.0" text=" Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Ubuntu Mono Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </JFXButton>
+            <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="35.0" layoutY="151.0">
+               <image>
+                  <Image url="@../assets/icons8-dashboard-48.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="300.0" onAction="#btnPasswordOnAction" prefHeight="48.0" prefWidth="156.0" text=" Password" textFill="WHITE">
+               <font>
+                  <Font name="Ubuntu Mono Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </JFXButton>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="39.0" layoutY="309.0">
+               <image>
+                  <Image url="@../assets/icons8-change-password-58.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="375.0" onAction="#btnBorrowedOnAction" prefHeight="48.0" prefWidth="156.0" text=" Borrowed" textFill="WHITE">
+               <font>
+                  <Font name="Ubuntu Mono Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </JFXButton>
+            <ImageView layoutX="38.0" layoutY="384.0">
+               <image>
+                  <Image url="@../assets/icons8-books-35.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="root" layoutX="238.0" layoutY="16.0" prefHeight="668.0" prefWidth="755.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="24.0" layoutY="24.0" prefHeight="46.0" prefWidth="194.0" text="DashBoard">
+               <font>
+                  <Font name="Ubuntu Mono Bold" size="36.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="24.0" layoutY="104.0" prefHeight="174.0" prefWidth="321.0" style="-fx-background-color: #00b894; -fx-background-radius: 8px;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="24.0" prefWidth="146.0" text="Borrowed Books" textFill="WHITE">
+                     <font>
+                        <Font name="Ubuntu Mono Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="243.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../assets/icons8-books-48.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="txtBorrowedBooks" layoutX="243.0" layoutY="112.0" prefHeight="30.0" prefWidth="48.0" textFill="WHITE">
+                     <font>
+                        <Font name="Ubuntu Mono Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label fx:id="txtName" layoutX="569.0" layoutY="45.0" prefHeight="27.0" prefWidth="167.0">
+               <font>
+                  <Font name="Ubuntu Mono Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="341.0" fitWidth="347.0" layoutX="24.0" layoutY="298.0">
+               <image>
+                  <Image url="@../assets/the-bookworm-is-my-spirit-animal-iii-tina-lavoie.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="341.0" fitWidth="347.0" layoutX="395.0" layoutY="298.0">
+               <image>
+                  <Image url="@../assets/when-in-doubt-go-to-the-library-library.gif" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <AnchorPane layoutX="381.0" layoutY="104.0" prefHeight="174.0" prefWidth="321.0" style="-fx-background-color: #d63031; -fx-background-radius: 8px;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="24.0" prefWidth="136.0" text="Due Books" textFill="WHITE">
+                     <font>
+                        <Font name="Ubuntu Mono Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="243.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../assets/icons8-books-48.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="txtDueBooks" layoutX="243.0" layoutY="115.0" prefHeight="30.0" prefWidth="48.0" textFill="WHITE">
+                     <font>
+                        <Font name="Ubuntu Mono Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView layoutX="521.0" layoutY="23.0">
+               <image>
+                  <Image url="@../assets/icons8-admin-48.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="518.0" layoutY="58.0">
+               <image>
+                  <Image url="@../assets/icons8-dot-24.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

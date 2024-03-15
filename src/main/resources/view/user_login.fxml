@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserLoginController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1000.0">
+         <image>
+            <Image url="@../assets/Telegram.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="root" layoutX="73.0" layoutY="64.0" prefHeight="572.0" prefWidth="855.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <AnchorPane prefHeight="572.0" prefWidth="476.0" style="-fx-background-radius: 5px;">
+               <children>
+                  <ImageView fitHeight="547.0" fitWidth="452.0" layoutX="14.0" layoutY="13.0">
+                     <image>
+                        <Image url="@../assets/551.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="27.0" onAction="#btnHomeOnAction" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: #b71540; -fx-background-radius: 100px;" text="    Home" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <ImageView layoutX="33.0" layoutY="35.0">
+                     <image>
+                        <Image url="@../assets/icons8-home-25.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="476.0" prefHeight="572.0" prefWidth="380.0">
+               <children>
+                  <ImageView fitHeight="124.0" fitWidth="129.0" layoutX="126.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../assets/vecteezy_bookworm-vector_266909.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="30.0" layoutX="34.0" layoutY="134.0">
+                     <image>
+                        <Image url="@../assets/icons8-book-48.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="72.0" layoutY="143.0" prefHeight="16.0" prefWidth="277.0" text="Welcome back to your Online Library">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUsername" layoutX="63.0" layoutY="215.0" prefHeight="46.0" prefWidth="272.0" promptText="Username" style="-fx-background-radius: 5px;" />
+                  <PasswordField fx:id="txtPassword" layoutX="63.0" layoutY="314.0" prefHeight="46.0" prefWidth="272.0" promptText="Password" style="-fx-background-radius: 5px;" />
+                  <JFXButton layoutX="82.0" layoutY="407.0" onAction="#btnSignInOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-radius: 10px; -fx-background-color: #8e44ad;" text="Sign In" textFill="WHITE">
+                     <font>
+                        <Font name="Ubuntu Mono Bold" size="18.0" />
+                     </font>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <ImageView layoutX="174.0" layoutY="467.0">
+                     <image>
+                        <Image url="@../assets/icons8-line-50.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="166.0" layoutY="517.0" onAction="#signUpChangeOnAction" text="Sign Up" textFill="#351da1">
+                     <font>
+                        <Font name="Ubuntu Mono Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

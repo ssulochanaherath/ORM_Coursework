@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SearchFormController">
+   <children>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="21.0" layoutY="14.0">
+         <image>
+            <Image url="@../assets/vecteezy_bookworm-vector_266909-removebg-preview.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="41.0" layoutY="214.0" prefHeight="51.0" prefWidth="555.0" text="Enter your Username And Book Name to confirm">
+         <font>
+            <Font name="Ubuntu Mono Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" layoutX="41.0" layoutY="273.0" prefHeight="41.0" prefWidth="252.0" promptText="Username" style="-fx-background-radius: 10px;" />
+      <JFXButton buttonType="RAISED" layoutX="466.0" layoutY="344.0" onAction="#btnConfirmOnAction" prefHeight="41.0" prefWidth="103.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 10px;" text="Confirm">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Ubuntu Mono Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtTitle" layoutX="41.0" layoutY="336.0" prefHeight="41.0" prefWidth="252.0" promptText="Book Title" style="-fx-background-radius: 10px;" />
+   </children>
+</AnchorPane>

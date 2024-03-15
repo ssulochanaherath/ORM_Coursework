@@ -13,10 +13,9 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:id="rootNode" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #f5f6fa;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserFormController">
+<AnchorPane fx:id="rootNode" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #f5f6fa;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BorrowedBooksController">
    <children>
-      <AnchorPane layoutX="7.0" layoutY="12.0" prefHeight="677.0" prefWidth="223.0" style="-fx-background-color: #353b48; -fx-background-radius: 15px;">
+      <AnchorPane layoutX="6.0" layoutY="12.0" prefHeight="677.0" prefWidth="223.0" style="-fx-background-color: #353b48; -fx-background-radius: 15px;">
          <effect>
             <DropShadow />
          </effect>
@@ -26,7 +25,7 @@
                   <Image url="@../assets/vecteezy_bookworm-vector_266909-removebg-preview.png" />
                </image>
             </ImageView>
-            <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="205.0" onAction="#btnBooksOnAction" prefHeight="48.0" prefWidth="156.0" text="Books" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="225.0" onAction="#btnBooksOnAction" prefHeight="48.0" prefWidth="156.0" text="Books" textFill="WHITE">
                <font>
                   <Font name="Ubuntu Mono Bold" size="18.0" />
                </font>
@@ -37,41 +36,9 @@
                   <Bloom />
                </effect>
             </JFXButton>
-            <ImageView layoutX="38.0" layoutY="214.0">
+            <ImageView layoutX="38.0" layoutY="234.0">
                <image>
                   <Image url="@../assets/icons8-books-30.png" />
-               </image>
-            </ImageView>
-            <JFXButton buttonType="RAISED" layoutX="27.0" layoutY="268.0" onAction="#btnBranchesOnAction" prefHeight="48.0" prefWidth="156.0" text="   Branches" textFill="WHITE">
-               <font>
-                  <Font name="Ubuntu Mono Bold" size="18.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <Bloom />
-               </effect>
-            </JFXButton>
-            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="39.0" layoutY="277.0">
-               <image>
-                  <Image url="@../assets/icons8-online-store-50.png" />
-               </image>
-            </ImageView>
-            <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="339.0" onAction="#btnUsersOnAction" prefHeight="48.0" prefWidth="156.0" text="Users" textFill="WHITE">
-               <font>
-                  <Font name="Ubuntu Mono Bold" size="18.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <Bloom />
-               </effect>
-            </JFXButton>
-            <ImageView layoutX="39.0" layoutY="348.0">
-               <image>
-                  <Image url="@../assets/icons8-users-30.png" />
                </image>
             </ImageView>
             <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="600.0" onAction="#btnSignOutOnAction" prefHeight="48.0" prefWidth="156.0" text="Sign Out" textFill="WHITE">
@@ -90,7 +57,7 @@
                   <Image url="@../assets/icons8-logout-24.png" />
                </image>
             </ImageView>
-            <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="139.0" onAction="#btnDashboardOnAction" prefHeight="48.0" prefWidth="156.0" text="  Dashboard" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="146.0" onAction="#btnDashboardOnAction" prefHeight="48.0" prefWidth="156.0" text=" Dashboard" textFill="WHITE">
                <font>
                   <Font name="Ubuntu Mono Bold" size="18.0" />
                </font>
@@ -101,19 +68,51 @@
                   <Bloom />
                </effect>
             </JFXButton>
-            <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="35.0" layoutY="144.0">
+            <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="35.0" layoutY="151.0">
                <image>
                   <Image url="@../assets/icons8-dashboard-48.png" />
                </image>
             </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="300.0" onAction="#btnPasswordOnAction" prefHeight="48.0" prefWidth="156.0" text=" Password" textFill="WHITE">
+               <font>
+                  <Font name="Ubuntu Mono Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </JFXButton>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="39.0" layoutY="309.0">
+               <image>
+                  <Image url="@../assets/icons8-change-password-58.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="375.0" onAction="#btnBorrowedOnAction" prefHeight="48.0" prefWidth="156.0" text=" Borrowed" textFill="WHITE">
+               <font>
+                  <Font name="Ubuntu Mono Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Bloom />
+               </effect>
+            </JFXButton>
+            <ImageView layoutX="39.0" layoutY="384.0">
+               <image>
+                  <Image url="@../assets/icons8-books-35.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="root" layoutX="238.0" layoutY="17.0" prefHeight="668.0" prefWidth="755.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15px;">
+      <AnchorPane fx:id="root" layoutX="235.0" layoutY="16.0" prefHeight="668.0" prefWidth="755.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15px;">
          <effect>
             <DropShadow />
          </effect>
          <children>
-            <Label layoutX="31.0" layoutY="27.0" prefHeight="46.0" prefWidth="194.0" text="Users">
+            <Label layoutX="31.0" layoutY="27.0" prefHeight="46.0" prefWidth="291.0" text="Borrowed Books">
                <font>
                   <Font name="Ubuntu Mono Bold" size="36.0" />
                </font>
@@ -123,11 +122,12 @@
                   <Font name="Ubuntu Mono Bold" size="14.0" />
                </font>
             </Label>
-            <TableView fx:id="tableUser" layoutX="25.0" layoutY="107.0" prefHeight="354.0" prefWidth="556.0" style="-fx-background-radius: 5px;">
+            <TableView fx:id="tableBorrowedBooks" layoutX="25.0" layoutY="117.0" prefHeight="338.0" prefWidth="705.0" style="-fx-background-radius: 5px;">
                <columns>
-                  <TableColumn fx:id="colUserId" prefWidth="157.0" text="User ID" />
-                  <TableColumn fx:id="colUserName" prefWidth="212.0" text="UserName" />
-                  <TableColumn fx:id="colTransaction" prefWidth="185.0" />
+                  <TableColumn fx:id="colBorrowedDate" prefWidth="202.0" text="Borrowed Date" />
+                  <TableColumn fx:id="colDueDate" prefWidth="203.0" text="Due Date" />
+                  <TableColumn fx:id="colBookId" prefWidth="156.0" text="Book ID" />
+                  <TableColumn fx:id="colReturn" prefWidth="143.0" />
                </columns>
                <effect>
                   <DropShadow>
@@ -147,7 +147,7 @@
                   <Image url="@../assets/icons8-dot-24.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="178.0" fitWidth="695.0" layoutX="30.0" layoutY="479.0">
+            <ImageView fitHeight="162.0" fitWidth="403.0" layoutX="21.0" layoutY="482.0">
                <image>
                   <Image url="@../assets/Reading-WPA-Posters-1940-1024x331.jpg" />
                </image>
@@ -155,9 +155,9 @@
                   <DropShadow />
                </effect>
             </ImageView>
-            <ImageView fitHeight="354.0" fitWidth="156.0" layoutX="590.0" layoutY="114.0">
+            <ImageView fitHeight="189.0" fitWidth="284.0" layoutX="450.0" layoutY="465.0">
                <image>
-                  <Image url="@../assets/14261-0-medium.jpg" />
+                  <Image url="@../assets/when-in-doubt-go-to-the-library-library.gif" />
                </image>
                <effect>
                   <DropShadow />
