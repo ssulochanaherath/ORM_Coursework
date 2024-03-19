@@ -2,7 +2,6 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Bloom?>
@@ -12,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootNode" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #dfe6e9;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AdminController">
+<AnchorPane fx:id="rootNode" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #dfe6e9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AdminController">
    <children>
       <ImageView fitHeight="700.0" fitWidth="1000.0">
          <image>
@@ -28,10 +27,10 @@
                <children>
                   <ImageView fitHeight="572.0" fitWidth="476.0">
                      <image>
-                        <Image url="@../assets/551.jpg" />
+                        <Image url="@../assets/Library.jpg" />
                      </image>
                   </ImageView>
-                  <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="28.0" onAction="#btnHomeOnAction" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: #b71540; -fx-background-radius: 100px;" text="    Home" textFill="WHITE">
+                  <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="28.0" onAction="#btnHomeOnAction" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: #130f40; -fx-background-radius: 100px;" text="    Home" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="10.0" />
                      </font>
@@ -48,25 +47,10 @@
             </AnchorPane>
             <AnchorPane layoutX="476.0" prefHeight="572.0" prefWidth="380.0" style="-fx-background-radius: 5px;">
                <children>
-                  <ImageView fitHeight="124.0" fitWidth="129.0" layoutX="126.0" layoutY="21.0">
-                     <image>
-                        <Image url="@../assets/vecteezy_bookworm-vector_266909.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="33.0" fitWidth="30.0" layoutX="40.0" layoutY="145.0">
-                     <image>
-                        <Image url="@../assets/icons8-book-48.png" />
-                     </image>
-                  </ImageView>
-                  <Label layoutX="70.0" layoutY="145.0" prefHeight="33.0" prefWidth="282.0" text="Welcome back to your Online Library">
-                     <font>
-                        <Font name="System Bold" size="13.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="txtUsername" layoutX="63.0" layoutY="216.0" prefHeight="46.0" prefWidth="272.0" promptText="Username" style="-fx-background-radius: 5px;" />
-                  <PasswordField fx:id="txtPassword" layoutX="63.0" layoutY="294.0" prefHeight="46.0" prefWidth="272.0" promptText="Password" style="-fx-background-radius: 5px;" />
-                  <PasswordField fx:id="txtConfirmPassword" layoutX="63.0" layoutY="376.0" prefHeight="46.0" prefWidth="272.0" promptText="Confirm Password" style="-fx-background-radius: 5px;" />
-                  <JFXButton buttonType="RAISED" layoutX="82.0" layoutY="460.0" onAction="#btnSIgnUpAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-radius: 10px; -fx-background-color: #8e44ad;" text="Sign Up" textFill="WHITE">
+                  <TextField fx:id="txtUsername" layoutX="61.0" layoutY="47.0" prefHeight="46.0" prefWidth="272.0" promptText="Username" style="-fx-background-radius: 5px;" />
+                  <PasswordField fx:id="txtPassword" layoutX="61.0" layoutY="125.0" prefHeight="46.0" prefWidth="272.0" promptText="Password" style="-fx-background-radius: 5px;" />
+                  <PasswordField fx:id="txtConfirmPassword" layoutX="61.0" layoutY="207.0" prefHeight="46.0" prefWidth="272.0" promptText="Confirm Password" style="-fx-background-radius: 5px;" />
+                  <JFXButton buttonType="RAISED" layoutX="80.0" layoutY="291.0" onAction="#btnSIgnUpAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-radius: 10px; -fx-background-color: #130f40;" text="Sign Up" textFill="WHITE">
                      <font>
                         <Font name="Ubuntu Mono Bold" size="18.0" />
                      </font>
@@ -77,24 +61,24 @@
                         <Bloom />
                      </effect>
                   </JFXButton>
-                  <JFXButton layoutX="140.0" layoutY="536.0" onAction="#btnSIgnInOnAction" prefHeight="24.0" prefWidth="120.0" text="Sign In" textFill="#0d0bae">
+                  <JFXButton layoutX="138.0" layoutY="454.0" onAction="#btnSIgnInOnAction" prefHeight="24.0" prefWidth="120.0" text="Sign In">
                      <font>
                         <Font name="Ubuntu Mono Bold" size="14.0" />
                      </font>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></JFXButton>
-                  <ImageView layoutX="174.0" layoutY="498.0">
+                  <ImageView layoutX="173.0" layoutY="370.0">
                      <image>
                         <Image url="@../assets/icons8-line-50.png" />
                      </image>
                   </ImageView>
-                  <JFXButton layoutX="337.0" layoutY="305.0" onAction="#btnShowPassword" prefHeight="25.0" prefWidth="25.0">
+                  <JFXButton layoutX="335.0" layoutY="132.0" onAction="#btnShowPassword" prefHeight="25.0" prefWidth="25.0">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
-                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="343.0" layoutY="309.0">
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="341.0" layoutY="140.0">
                      <image>
                         <Image url="@../assets/icons8-eye-24.png" />
                      </image>
@@ -102,12 +86,12 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-                  <JFXButton layoutX="337.0" layoutY="387.0" onAction="#btnShowPassword" prefHeight="25.0" prefWidth="25.0">
+                  <JFXButton layoutX="335.0" layoutY="214.0" onAction="#btnShowPassword" prefHeight="25.0" prefWidth="25.0">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </JFXButton>
-                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="343.0" layoutY="391.0">
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="341.0" layoutY="222.0">
                      <image>
                         <Image url="@../assets/icons8-eye-24.png" />
                      </image>
