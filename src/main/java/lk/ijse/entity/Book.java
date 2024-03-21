@@ -17,7 +17,6 @@ public class Book {
     private String status;
     @OneToMany(mappedBy = "book",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private List<BorrowedBooks> borrowedBooks;
-
     public Book() {
     }
 
